@@ -6,15 +6,178 @@
 }
 
 :root {
-  --blue: #232851;
+  --red: #D01418;
+  --white: #F3F3F3;
+  --white-primary: #FFFFFF;
   --black: #000000;
-  --grayishblue: #1E1E26;
-  --gray: #B3B2B7;
-  --lightgray: #FAFAFA;
-  --lightblue: #3CDDF3;
-  --violet: #8B48BF;
-  --white: #ffffff;
+  --black-dark: #222222;
+  --green: #619D00;
+  --gray: #C4C4C4;
 }
 
+header {
+  background-color: var(--black-dark);
+  padding: 15px;
+}
 
-@media (min-width: 481px) {}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo strong {
+  color: var(--white);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.logo span {
+  color: var(--red);
+  font-size: 30px;
+}
+
+#nav_first {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav_desktop {
+  display: none;
+}
+
+main {
+  background-color: var(--white);
+  padding-bottom: 60px;
+}
+
+#banner {
+  background-image: url("../img/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 130px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+#banner h1,
+#banner span {
+  font-size: 40px;
+  font-family: Roboto;
+  font-weight: 700;
+}
+
+#banner h1 {
+  text-align: center;
+  color: var(--white);
+}
+
+#banner span {
+  color: var(--red);
+}
+
+#banner button {
+  width: 220px;
+  height: 61px;
+  border-radius: 5px;
+  background-color: var(--red);
+  border: none;
+  color: var(--white);
+  font-size: 25px;
+  font-weight: 500;
+}
+
+#tops-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#tops-products h2 {
+  color: var(--black);
+  font-size: 30px;
+}
+
+#tops-products article {
+  background-color: var(--white-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 5px;
+}
+
+.container-img {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.container-info {
+  padding: 10px 20px;
+}
+
+#stars-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#stars-products h3 {
+  padding: 60px 0px 0px;
+}
+
+#stars-products article {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#stars-products img {
+  position: relative;
+  border-radius: 5px;
+}
+
+#stars-products span {
+  position: absolute;
+  margin-right: 20px;
+  color: var(--white-primary);
+}
+
+footer {
+  background-color: var(--black-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#socials ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#text-footer {
+  background-color: var(--gray);
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 412px) {
+  #banner {
+    background-position: center;
+  }
+}
