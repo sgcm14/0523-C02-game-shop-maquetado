@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  margin: 0px;
+}
+
+:root {
+  --blue: #232851;
+  --black: #000000;
+  --grayishblue: #1E1E26;
+  --gray: #B3B2B7;
+  --lightgray: #FAFAFA;
+  --lightblue: #3CDDF3;
+  --violet: #8B48BF;
+  --white: #ffffff;
+}
+
+
+@media (min-width: 481px) {}
